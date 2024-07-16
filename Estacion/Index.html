@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Agregar Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Agregar Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <header class="header d-flex justify-content-between align-items-center">
+        <div class="logo">
+            <a href="https://campestreags.com">
+                <img src="logo.png" height="50px" margin-right="10px">
+            </a>
+        </div>
+        <nav class="ml-auto">
+            <!-- Botón Iniciar Sesión -->
+             
+            <a href="/Estacion/Estacion/Index.html" class="mr-3">
+                <i class="bi bi-speedometer2"></i>
+            </a>
+        <nav class="ml-auto">
+            <div class="dropdown mr-3">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="levelsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Niveles
+                    <i class="bi bi-layers"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="levelsDropdown">
+                    <a class="dropdown-item" href="/Estacion/Estacion/Level/level.html">Nivel 1</a>
+                    <a class="dropdown-item" href="#">Nivel 2</a>
+                    <a class="dropdown-item" href="#">Nivel 3</a>
+                    <a class="dropdown-item" href="#">Nivel 4</a>
+                </div>
+            </div>
+
+            <div class="dropdown mr-3">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="basementsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sótanos
+                    <i class="bi bi-building"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="basementsDropdown">
+                    <a class="dropdown-item" href="/Estacion/Estacion/Level/level.html">Sótano 1</a>
+                    <a class="dropdown-item" href="#">Sótano 2</a>
+                    <a class="dropdown-item" href="#">Sótano 3</a>
+                    <a class="dropdown-item" href="#">Sótano 4</a>
+                </div>
+            </div>
+
+            <div class="dropdown mr-3">
+                <a href="#" class="btn btn-danger dropdown-toggle" id="camerasDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cámaras
+                    <i class="bi bi-camera"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="camerasDropdown">
+                    <a class="dropdown-item" href="/Estacion/Estacion/Cameras/cameras.html">Niveles</a>
+                    <a class="dropdown-item" href="#">Sótanos</a>
+                </div>
+            </div>
+
+            <a href="/Estacion/Estacion/Statistics/statistics.html" class="mr-3">Estadísticas
+                <i class="bi bi-bar-chart-line"></i>
+            </a>
+        </nav>
+
+        <div class="user-icon">
+            <a href="/Estacion/Estacion/Profile/profile.php">
+                <lord-icon
+                    src="https://cdn.lordicon.com/bgebyztw.json"
+                    trigger="hover"
+                    colors="primary:#109173,secondary:#08a88a"
+                    style="width: 35px;height:35px">
+                </lord-icon>
+            </a>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="dashboard">
+            <h1 class="mb-4 text-center">Estacionamiento Dashboard</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-white bg-light-green mb-3 shadow-lg">
+                        <div class="card-body text-center">
+                            <i class="bi bi-car-front-fill display-1 mb-3"></i>
+                            <h5 class="card-title">Espacios Totales</h5>
+                            <p class="card-text display-4">185</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-light-green mb-3 shadow-lg">
+                        <div class="card-body text-center">
+                            <i class="bi bi-x-circle-fill display-1 mb-3"></i>
+                            <h5 class="card-title">Espacios Ocupados</h5>
+                            <p class="card-text display-4">130</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-light-blue mb-3 shadow-lg">
+                        <div class="card-body text-center">
+                            <i class="bi bi-check-circle-fill display-1 mb-3"></i>
+                            <h5 class="card-title">Espacios Disponibles</h5>
+                            <p class="card-text display-4">55</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card text-white bg-light-blue mb-3 shadow-lg">
+                        <div class="card-body">
+                            <h5 class="card-title">Niveles del Estacionamiento</h5>
+                            <ul class="list-group list-group-flush text-dark">
+                                <li class="list-group-item bg-light-blue">S4: Disponibles: 26</li>
+                                <li class="list-group-item bg-light-blue">S3: Disponibles: 24</li>
+                                <li class="list-group-item bg-light-blue">S2: Disponibles: 24</li>
+                                <li class="list-group-item bg-light-blue">S1: Disponibles: 24</li>
+                                <li class="list-group-item bg-light-blue">N1</li>
+                                <li class="list-group-item bg-light-blue">N2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card text-white bg-light-green mb-3 shadow-lg">
+                        <div class="card-body text-center">
+                            <i class="bi bi-bar-chart-fill display-1 mb-3"></i>
+                            <h5 class="card-title">Estadísticas</h5>
+                            <p class="card-text">Sótano más usado: S4</p>
+                            <p class="card-text">Tiempo con más ocupación: 5 PM - 7 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Agregar Bootstrap JS al final del cuerpo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+</body>
+</html
